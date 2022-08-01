@@ -6,7 +6,7 @@ $line.ip = ""
 $line.stamp = ""
 $newest+=$line
 
-$devices = get-content dhcpsrvlog* | select-string -pattern ',Renew,',',Request,'
+$devices = get-content C:\Windows\System32\dhcp\dhcpsrvlog* | select-string -pattern ',Renew,',',Request,'
 
 write-output "
 
